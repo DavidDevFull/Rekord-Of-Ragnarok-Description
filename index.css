@@ -65,6 +65,8 @@ header section button{
   font-size: 20px;
   transition: .5s;
   cursor: pointer;
+
+  
 }
 header section button:first-child{
   width: 85px;
