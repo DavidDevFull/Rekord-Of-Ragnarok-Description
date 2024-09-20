@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Unlock&display=swap');
+/*
+  font-family: "Unlock", serif;
+  font-weight: 400;
+  font-style: normal;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--white);
+}
+/*Background dark mode*/
+:root{
+  --blood_Red:#752222;
+  --reddish_Pink:#F9086D;
+  --gold:#EBB800;
+  --light_Blue:#80A3B7;
+  --medium_Blue:#1B3D72;
+  --dark_Blue: #1B263B;
+  --black:#000000;
+  --white: #f9f9f9;
+  --white_Transparent:rgba(255,255,255,30%);
+}
+body{
+  width: 100%;
+  height: 165dvh;
+  background: linear-gradient(180deg, rgba(27,38,59,1) 0%, rgba(117,34,34,1) 100%);
+  
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column; */
+  
+}
+header{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+}
+header section{
+   width: 100%;
+   height: 13dvh;
+   border: solid 2px var(--gold);
+   border-radius: 60px;
+
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center ;
+}
+header section button{
+  border-radius: 12px;
+  font-size: 20px;
+  transition: .5s;
+  cursor: pointer;
+}
+header section button:first-child{
+  width: 85px;
+  height: 50px;
+  border: solid 3px var(--white);
+  background: transparent;
+
+}
+header section button:last-child{
+  height: 50px;
+  width: 180px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:var(--reddish_Pink);
+
+  box-shadow: 4px 3px 8px 0px var(--white_Transparent)
+}
+header section button:hover{
+  transform: translateY(-5px);
+  transition: .2s;
+}
+.theme_Dark_White{
+  background: var(--black);
+  border: solid 3px #1B3D72;
+  border-radius: 50px;
+  width: 100px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 4px 3px 8px 0px var(--white_Transparent);
+  margin: 3%;
+}
+.theme_Dark_White button{
+  width: 50%;
+  
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.theme_Dark_White button:first-child{
+  border-right: solid 1px var(--white);
+}
+
+header h1{
+  font-size: 1.4rem;
+  text-align: center;
+  font-family: "Unlock", serif;
+  font-weight: 400;
+  font-style: normal;
+  border-bottom: solid 3px var(--gold);
+}
+/**********************************************************************/
+.contain_Presentation{
+  width: 98%;
+  font-size: 18px;
+  border: none;
+  padding: 2%;
+  margin: auto;
+}
+.contain_Presentation p{
+  border-bottom: solid 1px var(--gold);
+  font-size: 16px;
+}
+/**********************************************************************/
+.card_Presentation{
+  width: 220px;
+  background: var(--white_Transparent);
+  border-radius: 7px;
+  border: solid 1px var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 9px;
+  gap: 20px;
+}
+.card_Presentation img{
+  border-radius: 9px;
+}
+.card_Presentation h2{
+  text-align: center;
+  font-size: 1.1rem;
+  border-bottom: solid 1px var(--gold);
+}
+.card_Presentation p{
+  text-align: center;
+  font-size: 14px;
+  border-bottom: solid 1px var(--gold);
+}
+.card_Presentation button{
+  width: 100%;
+  height: 35px;
+  border-radius: 50px;
+  color: var(--white);
+  background-color: #F9086D;
+  border: none;
+  cursor: pointer;
+  transition: .2s;
+}
+.card_Presentation button:hover{
+  transform: translateY(-5px);
+  transition: .2s;
+}
+/**********************************************************************/
+footer{
+  width: 280px;
+  height: 80px;
+  border: solid 1px var(--gold);
+  border-radius: 10px;
+
+  background: rgba(27, 38, 59,50%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+}
+footer img{
+  cursor: pointer;
+}
